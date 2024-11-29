@@ -1,0 +1,155 @@
+.hyperx_telegram {
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999
+}
+
+.hyperx_telegram.dn {
+    display: none
+}
+
+.hyperx_telegram.lt {
+    top: 20px;
+    left: 20px
+}
+
+.hyperx_telegram.lc {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%)
+}
+
+.hyperx_telegram.lb {
+    bottom: 20px;
+    left: 20px
+}
+
+.hyperx_telegram.rt {
+    top: 20px;
+    right: 20px
+}
+
+.hyperx_telegram.rc {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)
+}
+
+.hyperx_telegram.rb {
+    bottom: 20px;
+    right: 20px
+}
+
+.hyperx_telegram.tt {
+    flex-direction: column
+}
+
+.hyperx_telegram.tl {
+    flex-direction: row
+}
+
+.hyperx_telegram.tr {
+    flex-direction: row-reverse
+}
+
+.hyperx_telegram.tb {
+    flex-direction: column-reverse
+}
+
+.hyperx_telegram .hyperx_telegram_text {
+    width: auto;
+    margin: .5rem;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 7px 10px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    display: none;
+    transition: all 300ms
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox {
+    display: none;
+    transition: all 300ms
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    width: 250px;
+    background: #f4f4f4;
+    border: 1px solid #f0f0f0;
+    border-radius: 1.5rem
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_header {
+    padding: .8rem 1rem;
+    background: #f60;
+    color: #fff;
+    border-radius: 1.5rem 1.5rem 0 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_header .header_title {
+    width: 95%
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_header .header_close a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_header .header_close a span {
+    width: 15px;
+    height: 3px;
+    background: #fff;
+    display: inline-block
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_items {
+    padding: .5rem 1rem
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_items .hyperx_telegram_chatBox_item {
+    border-bottom: 1px solid #f9f9f9;
+    padding: .5rem 0
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_items .hyperx_telegram_chatBox_item:last-child {
+    border-bottom: 0
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_items .hyperx_telegram_chatBox_item a {
+    text-decoration: none;
+    color: #000
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_items .hyperx_telegram_chatBox_item a span {
+    display: block
+}
+
+.hyperx_telegram .hyperx_telegram_chatBox.show .hyperx_telegram_chatBox_items .hyperx_telegram_chatBox_item .item_name {
+    font-size: 1.1rem;
+    font-weight: bold
+}
+
+.hyperx_telegram.lt .hyperx_telegram_chatBox.show, .hyperx_telegram.lc .hyperx_telegram_chatBox.show, .hyperx_telegram.lb .hyperx_telegram_chatBox.show {
+    left: 0;
+    right: inherit
+}
+
+.hyperx_telegram.lt .hyperx_telegram_chatBox.show, .hyperx_telegram.rt .hyperx_telegram_chatBox.show {
+    top: 80px;
+    bottom: inherit
+}
