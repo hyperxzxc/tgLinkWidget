@@ -2,7 +2,7 @@
 
 ### The most simple use
 ```html
-<script src="https://cdn.jsdelivr.net/gh/hyperxzxc/tgWidget@main/assets/js/tg.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hyperxzxc/tgLinkWidget/assets/js/tg.js"></script>
 <script>
 var tgBtn = new TelegramBtn({tgID: ""});
 tgBtn.renderButton()
